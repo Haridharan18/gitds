@@ -55,7 +55,7 @@ int main(){
                 sort(a);
                 break;  
             case 0:
-                printf("You Exited👍\n");
+                printf("You Exited\n");
                 break;
             default:
                 printf("Invalid choice!\n");
