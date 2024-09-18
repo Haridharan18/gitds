@@ -73,11 +73,7 @@ void push(Stack* stack) {
 }
 
 // Function to pop a value from the stack
-void pop(Stack* stack) {
-    int dummy;
-    printf("enter position to pop:");
-    scanf("%d", &dummy); // Dummy input to pause and wait for the user to press Enter
-
+void pop(Stack* stack){
     if (stack->top == NULL) {
         printf("Stack is empty! Cannot pop.\n");
         return;
