@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#define MAX 100  // Maximum size of the queue
+#define MAX 100  
 
 typedef struct {
     int front, rear, size;
@@ -14,7 +14,7 @@ void dequeue(Queue *q);
 void displayQueue(Queue *q);
 
 int main() {
-    Queue q = {0, -1, 0};  // Initialize queue with default values
+    Queue q = {0, -1, 0};  
 
     int choice;
     while (1) {
@@ -48,7 +48,7 @@ int main() {
 }
 
 void enqueue(Queue *q) {
-    if (q->size == MAX) {  // Queue is full
+    if (q->size == MAX) {  
         printf("Queue is full. Cannot enqueue\n");
         return;
     }
@@ -63,7 +63,7 @@ void enqueue(Queue *q) {
 }
 
 void dequeue(Queue *q) {
-    if (q->size == 0) {  // Queue is empty
+    if (q->size == 0) {  
         printf("Queue is empty. Cannot dequeue\n");
         return;
     }
@@ -72,12 +72,12 @@ void dequeue(Queue *q) {
     q->front = (q->front + 1) % MAX;
     q->size--;
 
-    // Display the dequeued item and confirm
+    
     printf("Deleted item: %d\n", item);
 }
 
 void displayQueue(Queue *q) {
-    if (q->size == 0) {  // Queue is empty
+    if (q->size == 0) {  
         printf("Queue is empty\n");
         return;
     }
