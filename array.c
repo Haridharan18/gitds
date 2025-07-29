@@ -169,6 +169,8 @@ int sort(int *a) {
                 }
             }
         }
+        haridharan
+        
         printf("Sorted Array:\n");
         display(a);
 }
