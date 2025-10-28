@@ -1,0 +1,11 @@
+
+### `mkdocs.yml`
+```yaml
+site_name: Data Structures Project - Linked List
+theme:
+  name: material
+nav:
+  - Home: index.md
+  - Implementation: implementation.md
+  - Usage: usage.md
+  - About: about.md
